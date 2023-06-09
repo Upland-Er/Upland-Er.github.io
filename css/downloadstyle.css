@@ -1,0 +1,45 @@
+.imgcenter{
+  text-align: center;
+}
+h1{
+    font-size: 45px;
+    font-family: 'lucida console';
+    text-align: center;
+    color: darkgreen;}
+p{
+font-size: 25px;
+font-family: 'courier new';
+color: beige;
+text-align: center;}
+h2{
+font-size: 15px;
+font-family: monospace}
+a{
+font-size: 20px;
+font-family: 'courier new';
+text-decoration: none;}
+
+body{
+    background-color: black;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+li {
+  float: right;}
+li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;}
+  li a:hover{
+    background-color: darkgreen;
+  }
