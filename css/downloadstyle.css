@@ -21,7 +21,7 @@ text-decoration: none;}
 
 body{
     background-color: black;
-}
+    cursor: url("/img/cursor.png") 32 32, auto;}
 ul {
   list-style-type: none;
   margin: 0;
