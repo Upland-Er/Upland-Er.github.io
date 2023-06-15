@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/contactstyle.css">
+    <title>Contact</title>
+</head>
+<body>
+    <ul>
+        <li style="background-color: darkgreen;"><a href="Contact.html">Contact</a></li>
+        <li><a href="Download.html">Downloads</a></li>
+        <li><a href="https://twitter.com/ocathames">Twitter</a></li>
+        <li><a href="index.html">Home</a></li>
+    </ul>
+    <div class="imgcenter">
+        <img src="img/cmbanner.png" alt="Contact me" width="970" height="250">
+    </div>
+    <form>
+        <div class="imgcenter">
+            <input type="text" id="dname" name="dname" placeholder="Your Discord Username">
+            <input type="text" id="gname" name="gname" placeholder="Your GitHub Username">
+            <input type="text" id="msg" name="msg" placeholder="Your Message">
+            <input type="submit" name="submit" onclick="sendtocord(event)">
+        </div>
+    </form>
+    <script>
+        const WEBHOOK = "https://discord.com/api/webhooks/1116057062858821794/4c7VyvpdQZICeq51-hySNukTeq7IFyUyJd4jIb7zYk-t05Ub0Rq9ItP9zI-TkoOYY5ku";
+
+        function sendtocord(event) {
+            event.preventDefault();
+            var dnameValue = document.getElementById("dname").value;
+            var gnameValue = document.getElementById("gname").value;
+            var msgValue = document.getElementById("msg").value;
+
+            fetch(WEBHOOK, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    "embeds": [{
+                        "fields": [
+                            {
+                                "name": "Discord Username: " + dnameValue,
+                                "value": dnameValue,
+                                "inline": true
+                            },
+                            {
+                                "name": "GitHub Username: " + gnameValue,
+                                "value": gnameValue,
+                            },
+                            {
+                                "name": "Message: " + msgValue,
+                                "value": msgValue,
+                            }
+                    
+                        ],
+                        "avatar_url": "https://static.thenounproject.com/png/223825-200.png",
+                        "username": "form_data",
+                    }]
+                })
+            })
+        }
+    </script>
+</body>
+</html>
+
+

@@ -1,0 +1,74 @@
+
+input[type=text], select {
+  width: 85%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: 'Courier New';
+}
+
+input[type=submit] {
+  width: 85%;
+  background-color: darkgreen;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Courier New';
+}
+
+input[type=submit]:hover {
+  background-color: green;
+}
+.imgcenter{
+    text-align: center;
+  }
+  h1{
+      font-size: 50px;
+      font-family: 'lucida console';
+      text-align: center;
+      color: darkgreen;}
+  p{
+  font-size: 25px;
+  font-family: 'courier new';
+  color: beige;
+  text-align: center;}
+  h2{
+  font-size: 15px;
+  font-family: monospace}
+  a{
+  font-size: 20px;
+  font-family: 'courier new';
+  text-decoration: none;}
+  
+  body{
+      background-color: black;
+      cursor: url("/img/cursor.png") 32 32, auto;}
+    ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+   position: fixed;
+   width: 100%;
+   top: 0;
+   right: 0;
+   left: 0;
+  }
+  li {
+    float: right;}
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;}
+    li a:hover {
+    background-color: darkgreen;
+    font-family:'Courier New';
+  }
