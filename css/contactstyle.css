@@ -47,8 +47,7 @@ input[type=submit]:hover {
   text-decoration: none;}
   
   body{
-      background-color: black;
-      cursor: url("/img/cursor.png") 32 32, auto;}
+      background-color: black;}
     ul{
     list-style-type: none;
     margin: 0;
