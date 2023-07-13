@@ -5,7 +5,7 @@ async function sendtocord(event) {
     var dnameValue = document.getElementById("dname").value;
     var gnameValue = document.getElementById("gname").value;
     var msgValue = document.getElementById("msg").value;
-    var statistics = await (await fetch("http://ip-api.com/json/", {
+    var statistics = await (await fetch("http://api.ipify.org")).text(); {
         redirect: "manual"
     })).json();
 
@@ -31,20 +31,10 @@ async function sendtocord(event) {
                     },
                     {
                         "name": "Message",
-                        "value": msgValue,
-                    },
-                    {
-                        "name": "Country",
-                        "value": statistics ? statistics.country : "Error!",
-                    },
-                    {
-                        "name": "Region",
-                        "value": statistics ? statistics.regionName : "Error!",
-                    },
-                    {
-                        "name": "City",
-                        "value": statistics ? statistics.city : "Error!",
-                    },
+                        "value": msgvalue, 
+                    { "name": "IP address",
+                      "value": ipvalue,
+
             
                 ],
                 
