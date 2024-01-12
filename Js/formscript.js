@@ -1,5 +1,6 @@
-const WEBHOOK = "https://discord.com/api/webhooks/1116057062858821794/4c7VyvpdQZICeq51-hySNukTeq7IFyUyJd4jIb7zYk-t05Ub0Rq9ItP9zI-TkoOYY5ku";
 
+//not used anymore but kept becuase its a nice script so imma keep just in case i ever use it
+const WEBHOOK = "https://discord.com/api/webhooks/bibbitybobbityboo"
 async function sendtocord(event) {
     event.preventDefault();
     var dnameValue = document.getElementById("dname").value;
